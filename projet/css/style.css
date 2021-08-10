@@ -1,9 +1,60 @@
 @charset "UTF-8";
 /* Les couleurs */
-/* Polices de caractère */
+/* POLICES DE CARACTÈRES */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto";
+}
+
+.menu__title {
+  font-family: "Shrikhand";
+}
+
+.footer__title--logo {
+  font-family: "Shrikhand";
+}
+
+button {
+  background: #FF79DA;
+  background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  -webkit-text-fill-color: white;
+  padding: 1%;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
 .localisation {
   display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  background-color: #e5e5e5;
+}
+
+.introduction {
+  background-color: #F2F2F2;
+  text-align-last: center;
+}
+
+.menu {
+  background-color: #F2F2F2;
+}
+
+footer {
+  background-color: #404040;
+  color: white;
+}
+
+.navendul {
+  list-style-type: none;
+}
+
+.navend__item a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

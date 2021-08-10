@@ -1,2 +1,24 @@
-/* Polices de caractère */
+/* POLICES DE CARACTÈRES */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
+$head-font: "Shrikhand";
+$body-font: "Roboto";
+
+@mixin police-all($font: $body-font) {
+  font-family: $font;
+}
+
+body {
+  @include police-all;
+}
+
+.menu {
+  &__title {
+  @include police-all($head-font)
+  }
+}
+
+.footer__title--logo
+ {
+    @include police-all($head-font)
+}

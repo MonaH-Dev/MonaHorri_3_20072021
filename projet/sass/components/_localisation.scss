@@ -1,6 +1,10 @@
 .localisation
 {
   display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  background-color: darken($color-back, $amount: 5%);
 }
 
 

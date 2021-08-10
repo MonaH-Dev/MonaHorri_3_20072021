@@ -1,0 +1,20 @@
+// button {
+//   background-color: linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);;
+// }
+
+button {
+// COULEUR
+  background: $color-secondary;
+  background: -webkit-linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
+  background: -moz-linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
+  background: linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
+  -webkit-text-fill-color: white; 
+
+//FORME
+  padding: 1%;
+  border-radius: 20px;
+  border: none;
+
+//EFFET
+cursor: pointer;
+}

@@ -1,0 +1,16 @@
+footer {
+  background-color: darken($color-back, $amount: 70%);
+  color: white;
+}
+
+
+
+.navendul
+{
+    list-style-type: none;
+}
+.navend__item a/* enlever le sous-lignement du menu */
+{
+    text-decoration: none;
+    color: white;
+}
