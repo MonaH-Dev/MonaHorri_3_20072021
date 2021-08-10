@@ -43,6 +43,35 @@ button {
   background-color: #F2F2F2;
 }
 
+.fonctionnement__bloc {
+  display: flex;
+  align-items: center;
+}
+
+.fonctionnement__bloc--indication {
+  display: flex;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  width: 325px;
+  height: 75px;
+}
+
+.fonctionnement__num {
+  border-radius: 30px;
+  background-color: #9356DC;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.fonctionnement__picto {
+  color: #9356DC;
+}
+
 footer {
   background-color: #404040;
   color: white;
