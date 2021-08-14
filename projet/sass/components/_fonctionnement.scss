@@ -1,22 +1,22 @@
-.fnt__bloc {
+.fnt-bloc {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.fnt__bloc--indication {
+.fnt-bloc__indication {
   display: flex;
   align-items: center;
   background-color: $color-back;
   border-radius: 25px;
   width: 325px;
-  height: 75px;
+  height: 70px;
   text-indent: 15px;
   margin-left: 10px;
   box-shadow: 0px 3px 3px 3px darken($color-back, $amount: 2%);
 }
 
-.fnt__num {
+.fnt-bloc__num {
   border-radius: 30px;
   background-color: #9356DC;
   width: 20px;
@@ -29,6 +29,6 @@
   font-size: small;
 }
 
-.fnt__picto {
+.fnt-bloc__picto{
   color: $color-primary;
 }

@@ -14,14 +14,19 @@ body {
   font-family: "Shrikhand";
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 button {
   background: #FF79DA;
   background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   -webkit-text-fill-color: white;
-  padding: 1%;
-  border-radius: 20px;
+  padding: 15px 20px;
+  border-radius: 30px;
   border: none;
   cursor: pointer;
 }
@@ -37,31 +42,36 @@ button {
 .introduction {
   background-color: #F2F2F2;
   text-align-last: center;
+  padding: 40px;
+}
+
+h1 {
+  margin: 0;
 }
 
 .menu {
   background-color: #F2F2F2;
 }
 
-.fnt__bloc {
+.fnt-bloc {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.fnt__bloc--indication {
+.fnt-bloc__indication {
   display: flex;
   align-items: center;
   background-color: #F2F2F2;
   border-radius: 25px;
   width: 325px;
-  height: 75px;
+  height: 70px;
   text-indent: 15px;
   margin-left: 10px;
   box-shadow: 0px 3px 3px 3px #ededed;
 }
 
-.fnt__num {
+.fnt-bloc__num {
   border-radius: 30px;
   background-color: #9356DC;
   width: 20px;
@@ -74,8 +84,30 @@ button {
   font-size: small;
 }
 
-.fnt__picto {
+.fnt-bloc__picto {
   color: #9356DC;
+}
+
+.gridresto {
+  background-color: #F2F2F2;
+}
+
+.resto__prev {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 3px 3px #ededed;
+}
+
+.resto-prev__img {
+  object-fit: cover;
+  /* ajustement de l'image, rogner si besoin */
+  width: 100%;
+  height: 115px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .header__logo {

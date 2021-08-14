@@ -18,7 +18,11 @@ body {
   }
 }
 
-.footer__title--logo
- {
+.footer__title--logo {
     @include police-all($head-font)
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
