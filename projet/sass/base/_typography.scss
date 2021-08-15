@@ -19,7 +19,8 @@ body {
 }
 
 .footer__title--logo {
-    @include police-all($head-font)
+    @include police-all($head-font);
+    font-size: larger;
 }
 
 a {
