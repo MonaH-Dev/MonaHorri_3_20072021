@@ -14,7 +14,8 @@ body {
 
 .menu {
   &__title {
-  @include police-all($head-font)
+  @include police-all($head-font);
+  font-size: xx-large;
   }
 }
 

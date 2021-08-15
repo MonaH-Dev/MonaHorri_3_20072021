@@ -8,6 +8,7 @@ body {
 
 .menu__title {
   font-family: "Shrikhand";
+  font-size: xx-large;
 }
 
 .footer__title--logo {
@@ -62,12 +63,19 @@ h1 {
 
 .menu {
   background-color: #F2F2F2;
+  border-radius: 45px 45px 0 0;
+  padding: 30px 20px;
+}
+
+.fnt {
+  padding: 30px 20px;
 }
 
 .fnt-bloc {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .fnt-bloc__indication {
@@ -154,7 +162,7 @@ h1 {
 }
 
 footer {
-  background-color: #404040;
+  background-color: #333333;
   color: white;
   padding: 15px 25px;
 }
@@ -182,6 +190,12 @@ footer {
 
 .navend__picto {
   position: absolute;
+}
+
+.entete-img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

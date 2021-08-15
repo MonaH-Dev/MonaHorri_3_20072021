@@ -1,7 +1,13 @@
+.fnt {
+  padding: 30px 20px;
+} 
+
+
 .fnt-bloc {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .fnt-bloc__indication {
@@ -18,7 +24,7 @@
 
 .fnt-bloc__num {
   border-radius: 30px;
-  background-color: #9356DC;
+  background-color: $color-primary;
   width: 20px;
   height: 20px;
   display: flex;
