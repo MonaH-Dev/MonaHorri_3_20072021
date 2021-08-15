@@ -19,6 +19,15 @@ a {
   color: black;
 }
 
+h3, h4[class=quartier] {
+  margin: 0;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: large;
+}
+
 button {
   background: #FF79DA;
   background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
