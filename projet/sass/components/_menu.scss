@@ -2,4 +2,9 @@
   background-color: $color-back;
   border-radius: 45px 45px 0 0;
   padding: 30px 20px;
+  
+  &__title {
+    @include police-all($head-font);
+    font-size: xx-large;
+  }
 }

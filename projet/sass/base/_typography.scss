@@ -12,18 +12,6 @@ body {
   @include police-all;
 }
 
-.menu {
-  &__title {
-  @include police-all($head-font);
-  font-size: xx-large;
-  }
-}
-
-.footer__title--logo {
-    @include police-all($head-font);
-    font-size: larger;
-}
-
 a {
   text-decoration: none;
   color: black;
