@@ -65,6 +65,12 @@ h1 {
   padding: 30px 20px;
 }
 
+.fntContenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .fnt-bloc {
   display: flex;
   align-items: center;
@@ -98,6 +104,11 @@ h1 {
   color: #9356DC;
 }
 
+.fnt-bloc :hover, :active {
+  color: #9356DC;
+  background-color: #e4d5f6;
+}
+
 .gridresto {
   background-color: #F2F2F2;
   padding: 30px 20px;
@@ -127,7 +138,7 @@ h1 {
 .resto-prev__like {
   position: absolute;
   right: 15px;
-  bottom: 15px;
+  bottom: 5px;
 }
 
 .pastilleNV {

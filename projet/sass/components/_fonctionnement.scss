@@ -2,6 +2,12 @@
   padding: 30px 20px;
 } 
 
+.fntContenu{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .fnt-bloc {
   display: flex;
   align-items: center;
@@ -32,8 +38,13 @@
     position: absolute;
     font-size: small;
   }
-
+  
   &__picto :hover{
     color: $color-primary;
   }
+}
+
+.fnt-bloc :hover, :active{
+  color: $color-primary;
+  background-color: lighten($color: $color-primary, $amount: 30%);
 }
