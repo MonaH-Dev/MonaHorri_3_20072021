@@ -140,6 +140,21 @@ h1 {
   right: 15px;
   bottom: 5px;
 }
+.resto-prev__like:hover .full-heart-icon, .resto-prev__like:active .full-heart-icon {
+  opacity: 1;
+}
+.resto-prev__like i {
+  /* permet aux pictogrammes "<3" de se chevaucher */
+  position: absolute;
+}
+
+.full-heart-icon {
+  transition: all 2s ease-in-out;
+  background: -webkit-linear-gradient(purple, #d779d7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
 
 .pastilleNV {
   position: absolute;
