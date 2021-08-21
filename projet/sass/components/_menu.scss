@@ -2,9 +2,47 @@
   background-color: $color-back;
   border-radius: 45px 45px 0 0;
   padding: 30px 20px;
+  /* afin de faire passer l'image en dessous : */
+  margin-top: -40px;
+  z-index: 1; 
   
   &__title {
     @include police-all($head-font);
     font-size: xx-large;
   }
+
+  &__sstitle {
+    font-size: large;
+    font-weight: 400;
+    border-bottom: 4px solid $color-tertiary;
+    width: 40px;
+    padding-bottom: 5px;
+  }
+
+  &__prez {
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 3px 3px darken($color-back, $amount: 2%);
+    position: relative;
+  }
+}
+span /* le prix */{
+  position: absolute;
+  right: 25px;
+  bottom: 15px;
+  font-weight: bold;
+  }
+
+.menu__en-tete {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.menu__commander {
+  text-align: center;
 }

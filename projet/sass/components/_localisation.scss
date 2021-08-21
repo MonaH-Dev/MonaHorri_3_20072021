@@ -5,6 +5,10 @@
   justify-content: center;
   gap: 10px;
   background-color: darken($color-back, $amount: 5%);
+  // Pour l'ombre juste au dessus : 
+  position: relative;
+  z-index: -1;
+  margin-top: -3px;
 }
 
 

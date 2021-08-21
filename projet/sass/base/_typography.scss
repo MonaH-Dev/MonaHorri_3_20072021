@@ -17,8 +17,9 @@ a {
   color: black;
 }
 
-h3, h4[class="quartier"] {
+h3, h4:not(.slogan) {
   margin: 0px;
+  text-overflow: ellipsis; /* NE PAS MARCHE PAS ?!? */
 }
 
 h4 {
