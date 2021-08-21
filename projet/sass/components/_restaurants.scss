@@ -19,7 +19,7 @@ padding: 30px 20px;
     position: relative;
   }  
 
-  &__img /* l'image d'une card */ {
+  &__img {
     object-fit: cover; /* ajustement de l'image, rogner si besoin */
     width: 100%;
     height: 180px;
@@ -30,19 +30,41 @@ padding: 30px 20px;
     position: absolute;
     right: 15px;
     bottom: 5px;
+
+    &:hover,
+    &:active {
+      .full-heart-icon {
+        opacity: 1;
+      }
+    }
+
+    i { /* permet aux pictogrammes "<3" de se chevaucher */
+      position: absolute; 
+    }
   }
 }
 
+
+// TRANSITION & COULEURS DU COEUR : !!!! Penser à mettre les bne couleurs
+.full-heart-icon {
+  transition: all 2s ease-in-out;
+  background: -webkit-linear-gradient(purple, rgb(215, 121, 215));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+// PASTILLE "Nouveau" :
 .pastilleNV {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 5px 10px;
-    border-radius: 2px;
-  // COULEUR
-    background: $color-tertiary;
-    color: darken($color-tertiary, $amount: 40%);
-  // POLICE
-    font-size: smaller;
-    font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  border-radius: 2px;
+// COULEUR
+  background: $color-tertiary;
+  color: darken($color-tertiary, $amount: 40%);
+// POLICE
+  font-size: smaller;
+  font-weight: bold;
 }
