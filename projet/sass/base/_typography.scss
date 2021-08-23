@@ -19,7 +19,10 @@ a {
 
 h3, h4:not(.slogan) {
   margin: 5px 0 0;
-  text-overflow: ellipsis; /* NE PAS MARCHE PAS ?!? */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
 }
 
 h4 {

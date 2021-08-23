@@ -14,7 +14,9 @@ a {
 h3, h4:not(.slogan) {
   margin: 5px 0 0;
   text-overflow: ellipsis;
-  /* NE PAS MARCHE PAS ?!? */
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
 }
 
 h4 {
@@ -22,7 +24,7 @@ h4 {
   font-size: large;
 }
 
-button {
+.button {
   background: #FF79DA;
   background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
@@ -150,7 +152,7 @@ span {
   color: #9356DC;
 }
 
-.fnt-bloc :hover, :active {
+.fnt-bloc :hover, .fnt-bloc :active {
   color: #9356DC;
   background-color: #e4d5f6;
 }
@@ -185,18 +187,20 @@ span {
   position: absolute;
   right: 15px;
   bottom: 5px;
+  border: none;
+  background-color: transparent;
 }
-.resto-prev__like:hover .full-heart-icon, .resto-prev__like:active .full-heart-icon {
+.resto-prev:hover .full-heart-icon, .resto-prev:active .full-heart-icon {
   opacity: 1;
 }
-.resto-prev__like i {
+.resto-prev i {
   /* permet aux pictogrammes "<3" de se chevaucher */
   position: absolute;
 }
 
 .full-heart-icon {
   transition: all 2s ease-in-out;
-  background: -webkit-linear-gradient(purple, #d779d7);
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;

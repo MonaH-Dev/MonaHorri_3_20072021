@@ -2,7 +2,7 @@
 //   background-color: linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);;
 // }
 
-button {
+.button {
 // COULEUR
   background: $color-secondary;
   background: -webkit-linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
@@ -20,6 +20,8 @@ button {
 //EFFET
 cursor: pointer;
 }
+
+ 
 
 .menu__commander-btn {
 padding: 15px 50px;

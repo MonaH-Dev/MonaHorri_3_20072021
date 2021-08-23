@@ -30,6 +30,11 @@ padding: 30px 20px;
     position: absolute;
     right: 15px;
     bottom: 5px;
+    border: none;
+    background-color: transparent;
+
+  }
+
 
     &:hover,
     &:active {
@@ -42,13 +47,13 @@ padding: 30px 20px;
       position: absolute; 
     }
   }
-}
+
 
 
 // TRANSITION & COULEURS DU COEUR : !!!! Penser à mettre les bne couleurs
 .full-heart-icon {
   transition: all 2s ease-in-out;
-  background: -webkit-linear-gradient(purple, rgb(215, 121, 215));
+  background: -webkit-linear-gradient($color-primary,$color-secondary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
