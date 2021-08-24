@@ -41,6 +41,22 @@ button:not(.resto-prev__like) {
   padding: 15px 50px;
 }
 
+.bouton-Like:hover .full-heart-icon, .bouton-Like:active .full-heart-icon {
+  opacity: 1;
+}
+.bouton-Like i {
+  /* permet aux pictogrammes "<3" de se chevaucher */
+  position: absolute;
+}
+
+.full-heart-icon {
+  transition: all 2s ease-in-out;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
 .localisation {
   display: flex;
   align-items: baseline;
@@ -190,21 +206,6 @@ span {
   font-size: larger;
   border: none;
   cursor: pointer;
-}
-.resto-prev:hover .full-heart-icon, .resto-prev:active .full-heart-icon {
-  opacity: 1;
-}
-.resto-prev i {
-  /* permet aux pictogrammes "<3" de se chevaucher */
-  position: absolute;
-}
-
-.full-heart-icon {
-  transition: all 2s ease-in-out;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
 }
 
 .pastilleNV {

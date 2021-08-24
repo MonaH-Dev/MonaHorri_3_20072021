@@ -35,26 +35,17 @@ padding: 30px 20px;
     cursor: pointer;
   }
 
-    &:hover,
-    &:active {
-      .full-heart-icon {
-        opacity: 1;
-      }
-    }
+    // &:hover,
+    // &:active {
+    //   .full-heart-icon {
+    //     opacity: 1;
+    //   }
+    // }
 
-    i { /* permet aux pictogrammes "<3" de se chevaucher */
-      position: absolute; 
-    }
+    // i { /* permet aux pictogrammes "<3" de se chevaucher */
+    //   position: absolute; 
+    // }
   }
-
-// TRANSITION & COULEURS DU COEUR :
-.full-heart-icon {
-  transition: all 2s ease-in-out;
-  background: -webkit-linear-gradient($color-primary,$color-secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
 
 // PASTILLE "Nouveau" :
 .pastilleNV {
