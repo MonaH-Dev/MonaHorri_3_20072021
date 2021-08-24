@@ -14,9 +14,12 @@ a {
 h3, h4:not(.slogan) {
   margin: 5px 0 0;
   text-overflow: ellipsis;
+  /* rajoute 3 ptits points */
   white-space: nowrap;
-  width: 80%;
+  /* interdit le txt de revenir à la ligne */
   overflow: hidden;
+  /* permet de cacher le txt qui dépasse */
+  width: 80%;
 }
 
 h4 {
@@ -38,6 +41,7 @@ button:not(.resto-prev__like) {
 }
 
 .menu__commander-btn {
+  /* !!! la class n'est pas plus forte qu'un élément ??? */
   padding: 15px 50px;
 }
 

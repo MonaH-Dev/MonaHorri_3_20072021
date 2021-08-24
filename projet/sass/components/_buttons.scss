@@ -16,9 +16,9 @@ button:not(.resto-prev__like) {
 cursor: pointer;
 }
 
-.menu__commander-btn {
-padding: 15px 50px;
-}
+.menu__commander-btn { /* !!! la class n'est pas plus forte qu'un élément ??? */
+  padding: 15px 50px;
+  }
 
 // BOUTONS "J'aime"
 .bouton-Like {
