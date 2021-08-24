@@ -147,12 +147,19 @@ span {
   align-items: center;
   justify-content: center;
 }
+.menu__anim i {
+  transform: scale(0.1) rotate(-1turn);
+  transition: transform 700ms ease-in-out;
+}
 
 .menu__prez:hover, .menu__prez:active {
   cursor: pointer;
 }
 .menu__prez:hover .menu__prix, .menu__prez:hover .menu__anim, .menu__prez:active .menu__prix, .menu__prez:active .menu__anim {
   transform: translateX(-80px);
+}
+.menu__prez:hover i, .menu__prez:active i {
+  transform: scale(1) rotate(0turn);
 }
 
 .menu__prix, .menu__anim {

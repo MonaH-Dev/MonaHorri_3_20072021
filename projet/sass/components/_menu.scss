@@ -65,6 +65,11 @@ span /* le prix (.menu__prix) */{
   display: flex;
   align-items: center;
   justify-content: center;
+  i {
+// faire grossir et pivoter le picto lors de l'animation : 
+  transform: scale(0.1) rotate(-1turn);
+  transition: transform 700ms ease-in-out;
+  }
 }
 
 .menu__prez {
@@ -72,6 +77,9 @@ span /* le prix (.menu__prix) */{
     cursor: pointer;
     .menu__prix, .menu__anim {
       transform: translateX(-80px);
+    }
+    i {
+      transform: scale(1) rotate(0turn);
     }
   }
 }
