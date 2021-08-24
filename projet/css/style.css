@@ -24,7 +24,7 @@ h4 {
   font-size: large;
 }
 
-.button {
+button:not(.resto-prev__like) {
   background: #FF79DA;
   background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
@@ -189,6 +189,7 @@ span {
   bottom: 5px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .resto-prev:hover .full-heart-icon, .resto-prev:active .full-heart-icon {
   opacity: 1;
