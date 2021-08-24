@@ -3,8 +3,14 @@
   border-radius: 45px 45px 0 0;
   padding: 30px 20px;
   /* afin de faire passer l'image en dessous : */
-  margin-top: -40px;
-  z-index: 1; 
+  margin-top: -45px;
+  z-index: 1;
+
+  &__en-tete {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+  }
   
   &__title {
     @include police-all($head-font);
@@ -29,6 +35,10 @@
     box-shadow: 0px 3px 3px 3px darken($color-back, $amount: 2%);
     position: relative;
   }
+
+  &__commander {
+    text-align: center;
+  }
 }
 span /* le prix */{
   position: absolute;
@@ -36,13 +46,3 @@ span /* le prix */{
   bottom: 15px;
   font-weight: bold;
   }
-
-.menu__en-tete {
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-}
-
-.menu__commander {
-  text-align: center;
-}
