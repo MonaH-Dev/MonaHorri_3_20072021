@@ -27,6 +27,9 @@ cursor: pointer;
     .full-heart-icon {
       opacity: 1;
     }
+    i {
+    color: transparent; /* à améliorer */
+    }
   }
   i { /* permet aux pictogrammes "<3" de se chevaucher */
     position: absolute; 

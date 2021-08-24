@@ -48,6 +48,10 @@ button:not(.resto-prev__like) {
 .bouton-Like:hover .full-heart-icon, .bouton-Like:active .full-heart-icon {
   opacity: 1;
 }
+.bouton-Like:hover i, .bouton-Like:active i {
+  color: transparent;
+  /* à améliorer */
+}
 .bouton-Like i {
   /* permet aux pictogrammes "<3" de se chevaucher */
   position: absolute;
@@ -82,6 +86,7 @@ h1 {
   margin: 0;
 }
 
+/* MISE EN PAGE : */
 .menu {
   background-color: #F2F2F2;
   border-radius: 45px 45px 0 0;
@@ -115,6 +120,8 @@ h1 {
   box-sizing: border-box;
   box-shadow: 0px 3px 3px 3px #ededed;
   position: relative;
+  overflow: hidden;
+  height: 85px;
 }
 .menu__commander {
   text-align: center;
@@ -125,6 +132,31 @@ span {
   right: 25px;
   bottom: 15px;
   font-weight: bold;
+}
+
+/* ANIMATIONS : */
+.menu__anim {
+  background: #99E2D0;
+  color: white;
+  width: 80px;
+  height: 85px;
+  float: right;
+  margin-right: -95px;
+  margin-top: -70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__prez:hover, .menu__prez:active {
+  cursor: pointer;
+}
+.menu__prez:hover .menu__prix, .menu__prez:hover .menu__anim, .menu__prez:active .menu__prix, .menu__prez:active .menu__anim {
+  transform: translateX(-80px);
+}
+
+.menu__prix, .menu__anim {
+  transition: transform 700ms ease-in-out;
 }
 
 .fnt {

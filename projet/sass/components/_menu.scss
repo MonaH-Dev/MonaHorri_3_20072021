@@ -1,3 +1,4 @@
+/* MISE EN PAGE : */
 .menu {
   background-color: $color-back;
   border-radius: 45px 45px 0 0;
@@ -34,15 +35,48 @@
     box-sizing: border-box;
     box-shadow: 0px 3px 3px 3px darken($color-back, $amount: 2%);
     position: relative;
+    overflow: hidden;
+    height: 85px;
   }
 
   &__commander {
     text-align: center;
   }
 }
-span /* le prix */{
+span /* le prix (.menu__prix) */{
   position: absolute;
   right: 25px;
   bottom: 15px;
   font-weight: bold;
   }
+
+
+/* ANIMATIONS : */
+.menu__anim {
+  background: $color-tertiary;
+  color: white;
+// Taille et position :
+  width: 80px;
+  height: 85px;
+  float: right;
+  margin-right: -95px;
+  margin-top: -70px;
+// Centrer le picto dans la div : 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__prez {
+  &:hover, &:active {
+    cursor: pointer;
+    .menu__prix, .menu__anim {
+      transform: translateX(-80px);
+    }
+  }
+}
+
+.menu__prix, .menu__anim {
+  transition: transform 700ms ease-in-out;
+}
+
