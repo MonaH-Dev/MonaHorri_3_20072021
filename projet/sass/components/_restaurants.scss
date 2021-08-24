@@ -28,10 +28,10 @@ padding: 30px 20px;
 
   &__like {
     position: absolute;
-    right: 15px;
-    bottom: 5px;
+    right: 80px;
+    bottom: 55px;
+    font-size: larger;
     border: none;
-    background-color: transparent;
     cursor: pointer;
   }
 
@@ -47,9 +47,7 @@ padding: 30px 20px;
     }
   }
 
-
-
-// TRANSITION & COULEURS DU COEUR : !!!! Penser à mettre les bne couleurs
+// TRANSITION & COULEURS DU COEUR :
 .full-heart-icon {
   transition: all 2s ease-in-out;
   background: -webkit-linear-gradient($color-primary,$color-secondary);

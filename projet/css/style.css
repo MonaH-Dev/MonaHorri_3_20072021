@@ -185,10 +185,10 @@ span {
 }
 .resto-prev__like {
   position: absolute;
-  right: 15px;
-  bottom: 5px;
+  right: 80px;
+  bottom: 55px;
+  font-size: larger;
   border: none;
-  background-color: transparent;
   cursor: pointer;
 }
 .resto-prev:hover .full-heart-icon, .resto-prev:active .full-heart-icon {
