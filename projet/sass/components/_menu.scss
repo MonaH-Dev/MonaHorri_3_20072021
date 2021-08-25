@@ -89,60 +89,67 @@ span /* le prix (.menu__prix) */{
 }
 
 
-// .menu__prez {
-//   animation: apparition 2s;
-// }
+.menu__prez {
+  animation: apparition 2s;
 
-// @keyframes apparition {
-//   0% {
-//     transform: translateY(20px);
-//     opacity: 0;
-//   }
-//   17% {
-//     transform: translateY(15px);
-//   }
-//   24% {
-//     transform: translateY(10px);
-//   }
-//   85%,100% {
-//     opacity: 1;
-//   }
-//   100% {
-//     transform: translateY(0px);
-//   }
-// }
+  @for $i from 1 through 50 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+    }
+  }
+}
+
+@keyframes apparition {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  17% {
+    transform: translateY(15px);
+  }
+  24% {
+    transform: translateY(10px);
+  }
+  85%,100% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 
 
 // UTILISER LE STRAGGER : 
 
-$delay: 10s;
-$speed: 15s;
+// $delay: 10s;
+// $speed: 15s;
 
-@mixin animApparition($delay, $speed){
-  @keyframes apparition {
-    0% {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    17% {
-      transform: translateY(15px);
-    }
-    24% {
-      transform: translateY(10px);
-    }
-    85%,100% {
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-}
+// @mixin animApparition($delay, $speed){
+//   @keyframes apparition {
+//     0% {
+//       transform: translateY(20px);
+//       opacity: 0;
+//     }
+//     17% {
+//       transform: translateY(15px);
+//     }
+//     24% {
+//       transform: translateY(10px);
+//     }
+//     85%,100% {
+//       opacity: 1;
+//     }
+//     100% {
+//       transform: translateY(0px);
+//     }
+//   }
+// }
 
-@for $i from 0 through 3 {
-  @include animApparition(10s, 2s);
-  .menu__prez::nth-of-type(#{$i}) {
-    animation: apparition $speed timing-function $delay iteration-count direction fill-mode;
-  }
-}
+// @for $i from 0 through 3 {
+//   @include animApparition(10s, 2s);
+//   .menu__prez:nth-child(#{$i}) {
+//     animation-delay: ($i * 0.5s), 4s;
+//   }
+// }
 
