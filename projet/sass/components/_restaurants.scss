@@ -3,16 +3,25 @@ background-color: $color-back;
 padding: 30px 20px;
 }
 
+.restoListe {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .resto-prev /* une card */
 {
   background-color: white;
   border-radius: 20px;
-  width: 100%;
+  width: 450px;
   height: 250px;
   margin-bottom: 20px;
   box-sizing: border-box;
   box-shadow: 0px 3px 3px 3px darken($color-back, $amount: 2%);
   position: relative; // pour la patille "nouveau"
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   &__prez {
     margin: 10px 15px;
@@ -34,17 +43,7 @@ padding: 30px 20px;
     border: none;
     cursor: pointer;
   }
-    // &:hover,
-    // &:active {
-    //   .full-heart-icon {
-    //     opacity: 1;
-    //   }
-    // }
-
-    // i { /* permet aux pictogrammes "<3" de se chevaucher */
-    //   position: absolute; 
-    // }
-  }
+}
 
 // PASTILLE "Nouveau" :
 .pastilleNV {

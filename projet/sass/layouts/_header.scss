@@ -15,7 +15,11 @@
   box-shadow: 0 2px 10px black;
 }
 
-.fa-arrow-left /* picto retour Accueil */ {
+h1, h4.slogan {
+  text-align: center;
+}
+
+.fa-arrow-left /* picto "<-" retour Accueil */ {
   position: absolute;
   left: 40px;
   top: 18px;

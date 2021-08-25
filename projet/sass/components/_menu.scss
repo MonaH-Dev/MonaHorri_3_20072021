@@ -94,7 +94,7 @@ span /* le prix (.menu__prix) */{
 
   @for $i from 1 through 50 {
     &:nth-child(#{$i}) {
-      animation-delay: 100ms * $i;
+      animation-delay: 200ms * $i;
     }
   }
 }
@@ -102,13 +102,15 @@ span /* le prix (.menu__prix) */{
 @keyframes apparition {
   0% {
     transform: translateY(20px);
-    opacity: 0;
+    opacity: 0.1;
   }
   17% {
     transform: translateY(15px);
+    opacity: 0.5;
   }
   24% {
     transform: translateY(10px);
+    opacity: 0.8;
   }
   85%,100% {
     opacity: 1;
