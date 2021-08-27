@@ -1,5 +1,5 @@
-// BOUTONS PRINCIPAUX
-button:not(.resto-prev__like) {
+/* BOUTONS PRINCIPAUX */ /*#region*/
+button:not(.bouton-Like) {
 // COULEUR
   background: $color-secondary;
   background: -webkit-linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
@@ -19,9 +19,17 @@ cursor: pointer;
 .menu__commander-btn { /* !!! la class n'est pas plus forte qu'un élément ??? */
   padding: 15px 50px;
   }
+/*#endregion*/
 
-// BOUTONS "J'aime"
+/* BOUTONS "J'aime" */ /*#region*/
 .bouton-Like {
+  font-size: larger;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  i { /* permet aux pictogrammes "<3" de se chevaucher */
+    position: absolute; 
+  }
   &:hover,
   &:active {
     .full-heart-icon {
@@ -30,9 +38,6 @@ cursor: pointer;
     i {
     color: transparent; /* à améliorer */
     }
-  }
-  i { /* permet aux pictogrammes "<3" de se chevaucher */
-    position: absolute; 
   }
 }
 
@@ -44,3 +49,4 @@ cursor: pointer;
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
+/*#endregion*/

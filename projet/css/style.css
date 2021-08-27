@@ -27,7 +27,9 @@ h4 {
   font-size: large;
 }
 
-button:not(.resto-prev__like) {
+/* BOUTONS PRINCIPAUX */
+/*#region*/
+button:not(.bouton-Like) {
   background: #FF79DA;
   background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
@@ -45,16 +47,25 @@ button:not(.resto-prev__like) {
   padding: 15px 50px;
 }
 
+/*#endregion*/
+/* BOUTONS "J'aime" */
+/*#region*/
+.bouton-Like {
+  font-size: larger;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+.bouton-Like i {
+  /* permet aux pictogrammes "<3" de se chevaucher */
+  position: absolute;
+}
 .bouton-Like:hover .full-heart-icon, .bouton-Like:active .full-heart-icon {
   opacity: 1;
 }
 .bouton-Like:hover i, .bouton-Like:active i {
   color: transparent;
   /* à améliorer */
-}
-.bouton-Like i {
-  /* permet aux pictogrammes "<3" de se chevaucher */
-  position: absolute;
 }
 
 .full-heart-icon {
@@ -65,6 +76,7 @@ button:not(.resto-prev__like) {
   opacity: 0;
 }
 
+/*#endregion*/
 .localisation {
   display: flex;
   align-items: baseline;
@@ -87,6 +99,7 @@ h1 {
 }
 
 /* MISE EN PAGE : */
+/*#region*/
 .menu {
   background-color: #F2F2F2;
   border-radius: 45px 45px 0 0;
@@ -99,6 +112,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   width: 95%;
+  position: relative;
 }
 .menu__title {
   font-family: "Shrikhand";
@@ -126,6 +140,11 @@ h1 {
 .menu__commander {
   text-align: center;
 }
+.menu__like {
+  position: absolute;
+  right: 15px;
+  bottom: 45px;
+}
 
 span {
   position: absolute;
@@ -140,7 +159,10 @@ span {
   max-width: 800px;
 }
 
+/*#endregion*/
 /* ANIMATIONS : */
+/*#region*/
+/* ANIMATION DE L'ENCOCHE VERTE */
 .menu__anim {
   background: #99E2D0;
   color: white;
@@ -158,6 +180,10 @@ span {
   transition: transform 700ms ease-in-out;
 }
 
+.menu__prix, .menu__anim, h3, h4 {
+  transition: transform 700ms ease-in-out;
+}
+
 .menu__prez:hover, .menu__prez:active {
   cursor: pointer;
 }
@@ -171,10 +197,7 @@ span {
   width: calc(80% - 80px);
 }
 
-.menu__prix, .menu__anim, h3, h4 {
-  transition: transform 700ms ease-in-out;
-}
-
+/* APPARITION DES REPAS UN PAR UN */
 .menu__prez {
   opacity: 0;
   animation: apparition 2s forwards;
@@ -350,6 +373,7 @@ span {
     transform: translateY(0px);
   }
 }
+/*#endregion*/
 .fnt {
   padding: 30px 20px;
 }
@@ -437,13 +461,11 @@ span {
 }
 .resto-prev__like {
   position: absolute;
-  right: 80px;
+  right: 50px;
   bottom: 55px;
-  font-size: larger;
-  border: none;
-  cursor: pointer;
 }
 
+/* PASTILLE "Nouveau" */
 .pastilleNV {
   position: absolute;
   top: 15px;
@@ -487,6 +509,81 @@ h1, h4.slogan {
   color: #404040;
 }
 
+/* APPARITION ET DISPARITON du LOADING SCREEN */
+/*#region*/
+.logo {
+  font-size: xxx-large;
+  font-family: "Shrikhand";
+  background: #9356DC;
+  background: -webkit-repeating-linear-gradient(to right, #9356DC 0%, #FF79DA 50%, #9356DC 100%);
+  background: -moz-repeating-linear-gradient(to right, #9356DC 0%, #FF79DA 50%, #9356DC 100%);
+  background: repeating-linear-gradient(to right, #9356DC 0%, #FF79DA 50%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.LoadingSpinner {
+  text-align: center;
+  background-color: #F2F2F2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  animation: LoadingAnim 3s forwards;
+  padding-top: 100px;
+}
+
+@keyframes LoadingAnim {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*#endregion*/
+/* ANIMATION DES CERCLES / ONDULATIONS */
+/*#region*/
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid darkgray;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+/*#endregion*/
 footer {
   background-color: #333333;
   color: white;
@@ -503,15 +600,14 @@ footer {
   padding: 0;
 }
 
+.navend__item {
+  margin-bottom: 10px;
+}
 .navend__item a {
   text-decoration: none;
   color: white;
   text-indent: 25px;
   /* pour alignt picto*/
-}
-
-.navend__item {
-  margin-bottom: 10px;
 }
 
 .navend__item--picto {

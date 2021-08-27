@@ -3,32 +3,29 @@ footer {
   color: white;
   padding: 15px 25px;
 }
-
 .footer__title--logo {
   @include police-all($head-font);
   font-size: larger;
 }
-
 .navendul
 {
     list-style-type: none;
     padding: 0;
 }
-
-.navend__item a/* enlever le sous-lignement du menu */
-{
-    text-decoration: none;
-    color: white;
-    text-indent: 25px; /* pour alignt picto*/
-}
 .navend__item {
   margin-bottom: 10px;
+
+    a /* enlever le sous-lignement du menu */
+  {
+      text-decoration: none;
+      color: white;
+      text-indent: 25px; /* pour alignt picto*/
+  }
 }
 .navend__item--picto {
   display: flex;
   flex-wrap: nowrap;
 }
-
 .navend__picto {
   position: absolute;
 }

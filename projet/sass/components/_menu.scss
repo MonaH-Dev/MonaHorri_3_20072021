@@ -1,4 +1,4 @@
-/* MISE EN PAGE : */
+/* MISE EN PAGE : */ /*#region*/
 .menu {
   background-color: $color-back;
   border-radius: 45px 45px 0 0;
@@ -6,18 +6,16 @@
   /* afin de faire passer l'image en dessous : */
   margin-top: -45px;
   z-index: 1;
-
   &__en-tete {
     display: flex;
     justify-content: space-between;
     width: 95%;
+    position: relative
   }
-  
   &__title {
     @include police-all($head-font);
     font-size: xx-large;
   }
-
   &__sstitle {
     font-size: large;
     font-weight: 400;
@@ -25,7 +23,6 @@
     width: 40px;
     padding-bottom: 5px;
   }
-
   &__prez {
     background-color: white;
     padding: 15px;
@@ -38,9 +35,13 @@
     overflow: hidden;
     height: 85px;
   }
-
   &__commander {
     text-align: center;
+  }
+  &__like {
+    position: absolute;
+    right: 15px;
+    bottom: 45px;
   }
 }
 span /* le prix (.menu__prix) */{
@@ -56,7 +57,10 @@ span /* le prix (.menu__prix) */{
     max-width: 800px;
 }
 
-/* ANIMATIONS : */
+/*#endregion*/
+
+/* ANIMATIONS : */ /*#region*/
+/* ANIMATION DE L'ENCOCHE VERTE */
 .menu__anim {
   background: $color-tertiary;
   color: white;
@@ -70,11 +74,15 @@ span /* le prix (.menu__prix) */{
   display: flex;
   align-items: center;
   justify-content: center;
-  i {
 // faire grossir et pivoter le picto lors de l'animation : 
+  i {
   transform: scale(0.1) rotate(-1turn);
   transition: transform 700ms ease-in-out;
   }
+}
+
+.menu__prix, .menu__anim, h3, h4 {
+  transition: transform 700ms ease-in-out;
 }
 
 .menu__prez {
@@ -92,10 +100,7 @@ span /* le prix (.menu__prix) */{
   }
 }
 
-.menu__prix, .menu__anim, h3, h4 {
-  transition: transform 700ms ease-in-out;
-}
-
+/* APPARITION DES REPAS UN PAR UN */
 .menu__prez {
   opacity: 0;
   animation: apparition 2s forwards;
@@ -106,7 +111,6 @@ span /* le prix (.menu__prix) */{
     }
   }
 }
-
 @keyframes apparition {
   0% {
     transform: translateY(20px);
@@ -163,3 +167,4 @@ span /* le prix (.menu__prix) */{
 //   }
 // }
 
+/*#endregion*/
