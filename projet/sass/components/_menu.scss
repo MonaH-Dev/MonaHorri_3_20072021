@@ -81,6 +81,9 @@ span /* le prix (.menu__prix) */{
     i {
       transform: scale(1) rotate(0turn);
     }
+    h3, h4 {
+      width: calc(80% - 80px);
+    }
   }
 }
 
@@ -88,9 +91,15 @@ span /* le prix (.menu__prix) */{
   transition: transform 700ms ease-in-out;
 }
 
+h3, h4 {
+  transition: width 700ms ease-in-out;
+}
+
+
 
 .menu__prez {
-  animation: apparition 2s;
+  opacity: 0;
+  animation: apparition 2s forwards;
 
   @for $i from 1 through 50 {
     &:nth-child(#{$i}) {

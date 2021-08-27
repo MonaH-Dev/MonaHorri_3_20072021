@@ -161,13 +161,21 @@ span {
 .menu__prez:hover i, .menu__prez:active i {
   transform: scale(1) rotate(0turn);
 }
+.menu__prez:hover h3, .menu__prez:hover h4, .menu__prez:active h3, .menu__prez:active h4 {
+  width: calc(80% - 80px);
+}
 
 .menu__prix, .menu__anim {
   transition: transform 700ms ease-in-out;
 }
 
+h3, h4 {
+  transition: width 700ms ease-in-out;
+}
+
 .menu__prez {
-  animation: apparition 2s;
+  opacity: 0;
+  animation: apparition 2s forwards;
 }
 .menu__prez:nth-child(1) {
   animation-delay: 200ms;
