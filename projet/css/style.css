@@ -134,12 +134,18 @@ span {
   font-weight: bold;
 }
 
+.menuListe {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
 /* ANIMATIONS : */
 .menu__anim {
   background: #99E2D0;
   color: white;
   width: 80px;
-  height: 85px;
+  height: 90px;
   float: right;
   margin-right: -95px;
   margin-top: -70px;
@@ -165,12 +171,8 @@ span {
   width: calc(80% - 80px);
 }
 
-.menu__prix, .menu__anim {
+.menu__prix, .menu__anim, h3, h4 {
   transition: transform 700ms ease-in-out;
-}
-
-h3, h4 {
-  transition: width 700ms ease-in-out;
 }
 
 .menu__prez {
