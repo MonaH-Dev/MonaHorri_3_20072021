@@ -530,7 +530,8 @@ h1, h4.slogan {
   height: 100%;
   z-index: 1;
   opacity: 0;
-  animation: LoadingAnim 3s forwards;
+  display: block;
+  animation: LoadingAnim 3s;
   padding-top: 100px;
 }
 
@@ -543,6 +544,7 @@ h1, h4.slogan {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 /*#endregion*/
