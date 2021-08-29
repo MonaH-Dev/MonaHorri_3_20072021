@@ -85,7 +85,7 @@ button:not(.bouton-Like) {
   background-color: #e5e5e5;
   position: relative;
   z-index: -1;
-  margin-top: -3px;
+  padding-top: 60px;
 }
 
 .introduction {
@@ -483,6 +483,9 @@ body {
 }
 
 .header__logo {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
   box-shadow: 0 5px 5px lightgrey;
   /* effet diffus */
   background-color: white;
@@ -525,13 +528,13 @@ h1, h4.slogan {
 .LoadingSpinner {
   text-align: center;
   background-color: #F2F2F2;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 10;
   opacity: 0;
   display: block;
-  animation: LoadingAnim 3s;
+  animation: LoadingAnim 3s forwards;
   padding-top: 100px;
 }
 
@@ -542,9 +545,12 @@ h1, h4.slogan {
   75% {
     opacity: 1;
   }
+  99% {
+    z-index: 1;
+  }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -100;
   }
 }
 /*#endregion*/

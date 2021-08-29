@@ -1,6 +1,8 @@
 .header {
   &__logo {
-
+    position: fixed;
+    width: 100%;
+    z-index: 2;
     box-shadow: 0 5px 5px lightgrey;  /* effet diffus */
     background-color: white;
     height: 50px;
