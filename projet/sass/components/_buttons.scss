@@ -38,22 +38,27 @@ input.checkbox-Like {
 }
 
 .bouton-Like input:checked ~ .full-heart-icon{
-  font-weight: 600;
+  transition: all 2s ease-in-out;
+  background: -webkit-linear-gradient($color-primary,$color-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 1;
 }
-.bouton.Like input:not(:checked) ~ .full-heart-icon {
+.bouton-Like input:not(:checked) ~ .full-heart-icon{
   color: black;
   font-weight: 400;
 }
 
 // TRANSITION & COULEURS DU COEUR :
-.full-heart-icon {
-  transition: all 2s ease-in-out;
-  background: -webkit-linear-gradient($color-primary,$color-secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-}
+// .full-heart-icon {
+//   transition: all 2s ease-in-out;
+
+// }
+//   background: -webkit-linear-gradient($color-primary,$color-secondary);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   opacity: 0;
+// }
 /*#endregion*/
 
 

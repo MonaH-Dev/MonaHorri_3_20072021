@@ -67,21 +67,16 @@ input.checkbox-Like {
 }
 
 .bouton-Like input:checked ~ .full-heart-icon {
-  font-weight: 600;
-  opacity: 1;
-}
-
-.bouton.Like input:not(:checked) ~ .full-heart-icon {
-  color: black;
-  font-weight: 400;
-}
-
-.full-heart-icon {
   transition: all 2s ease-in-out;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
+  opacity: 1;
+}
+
+.bouton-Like input:not(:checked) ~ .full-heart-icon {
+  color: black;
+  font-weight: 400;
 }
 
 /*#endregion*/
