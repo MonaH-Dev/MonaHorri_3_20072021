@@ -33,9 +33,12 @@ padding: 30px 20px;
     border-radius: 15px 15px 0px 0px;
   }
   &__like {
-    position: absolute;
-    right: 50px;
-    bottom: 55px;
+    // pour coller aux dimensions du pictogramme coeur :
+    width: 39px;
+    height: 38px;
+    // positionnement :
+    right: 30px;
+    bottom: 25px;
   }
 }
 
