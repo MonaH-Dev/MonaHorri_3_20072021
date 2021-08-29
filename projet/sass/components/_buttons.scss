@@ -1,5 +1,5 @@
 /* BOUTONS PRINCIPAUX */ /*#region*/
-button:not(.bouton-Like) {
+button{
 // COULEUR
   background: $color-secondary;
   background: -webkit-linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
@@ -12,13 +12,23 @@ button:not(.bouton-Like) {
   padding: 15px 20px;
   border-radius: 30px;
   border: none;
-//EFFET
+// EFFET
 cursor: pointer;
+// TRANSITION
+  &:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 3px 7px 4px lightgrey;
+    opacity: 0.9;
+  }
+transition: transform 300ms ease-in-out;
 }
+
+
 
 .menu__commander-btn { /* !!! la class n'est pas plus forte qu'un élément ??? */
   padding: 15px 50px;
-  }
+}
+
 /*#endregion*/
 
 /* BOUTONS "J'aime" */ /*#region*/
@@ -38,7 +48,7 @@ input.checkbox-Like {
 }
 
 .bouton-Like input:checked ~ .full-heart-icon{
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
   background: -webkit-linear-gradient($color-primary,$color-secondary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -48,6 +58,7 @@ input.checkbox-Like {
   color: black;
   font-weight: 400;
 }
+
 
 // TRANSITION & COULEURS DU COEUR :
 // .full-heart-icon {

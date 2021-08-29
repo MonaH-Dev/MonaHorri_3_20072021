@@ -29,7 +29,7 @@ h4 {
 
 /* BOUTONS PRINCIPAUX */
 /*#region*/
-button:not(.bouton-Like) {
+button {
   background: #FF79DA;
   background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
@@ -40,6 +40,12 @@ button:not(.bouton-Like) {
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  transition: transform 300ms ease-in-out;
+}
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 3px 7px 4px lightgrey;
+  opacity: 0.9;
 }
 
 .menu__commander-btn {
@@ -67,7 +73,7 @@ input.checkbox-Like {
 }
 
 .bouton-Like input:checked ~ .full-heart-icon {
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -463,9 +469,9 @@ span {
   border-radius: 15px 15px 0px 0px;
 }
 .resto-prev__like {
-  width: 39px;
-  height: 38px;
-  right: 30px;
+  width: 32px;
+  height: 32px;
+  right: 40px;
   bottom: 25px;
 }
 
