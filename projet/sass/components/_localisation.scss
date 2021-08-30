@@ -6,7 +6,7 @@
   background-color: darken($color-back, $amount: 5%);
   // Pour l'ombre juste au dessus : 
   position: relative;
-  z-index: -1;
+  z-index: 1;
   padding-top: 60px;
 }
 
