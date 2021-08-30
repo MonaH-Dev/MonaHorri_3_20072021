@@ -59,8 +59,7 @@ span /* le prix (.menu__prix) */{
 
 /*#endregion*/
 
-/* ANIMATIONS : */ /*#region*/
-/* ANIMATION DE L'ENCOCHE VERTE */
+/* ANIMATION DE L'ENCOCHE VERTE */ /*#region*/
 .menu__anim {
   background: $color-tertiary;
   color: white;
@@ -99,8 +98,9 @@ span /* le prix (.menu__prix) */{
     }
   }
 }
+/*#endregion*/
 
-/* APPARITION DES REPAS UN PAR UN */
+/* APPARITION DES REPAS UN PAR UN "Stagger" = échelonner */ /*#region*/
 .menu__prez {
   opacity: 0;
   animation: apparition 2s forwards;
@@ -121,40 +121,5 @@ span /* le prix (.menu__prix) */{
     opacity: 1;
   }
 }
-
-
-
-// UTILISER LE STRAGGER : 
-
-// $delay: 10s;
-// $speed: 15s;
-
-// @mixin animApparition($delay, $speed){
-//   @keyframes apparition {
-//     0% {
-//       transform: translateY(20px);
-//       opacity: 0;
-//     }
-//     17% {
-//       transform: translateY(15px);
-//     }
-//     24% {
-//       transform: translateY(10px);
-//     }
-//     85%,100% {
-//       opacity: 1;
-//     }
-//     100% {
-//       transform: translateY(0px);
-//     }
-//   }
-// }
-
-// @for $i from 0 through 3 {
-//   @include animApparition(10s, 2s);
-//   .menu__prez:nth-child(#{$i}) {
-//     animation-delay: ($i * 0.5s), 4s;
-//   }
-// }
 
 /*#endregion*/

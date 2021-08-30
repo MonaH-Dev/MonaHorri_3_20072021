@@ -47,17 +47,45 @@ input.checkbox-Like {
   position: absolute; /* pour pouvoir le positionner dans le preview */
 }
 
-.bouton-Like input:checked ~ .full-heart-icon{
-  transition: all 1s ease-in-out;
+
+// La transition de la couleur ne marche pas
+
+// HTML utilisé : 
+// <div class="resto-prev__like bouton-Like">
+// <input type="checkbox" class="checkbox-Like">
+// <i class="fas fa-heart fa-2x full-heart-icon"></i>
+// </div>
+
+// CSS correspondant : 
+.full-heart-icon {
+  transition: all 1.5s ease-in-out;
+}
+.bouton-Like input:checked ~ .full-heart-icon{  
+  font-weight: 900;
   background: -webkit-linear-gradient($color-primary,$color-secondary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 1;
+  transform: scale(1.1);
 }
-.bouton-Like input:not(:checked) ~ .full-heart-icon{
-  color: black;
+.bouton-Like input:not(:checked) ~ .full-heart-icon{  
   font-weight: 400;
 }
+
+
+
+// .full-heart-icon {
+//   transition: background-color 1s ease-in-out;
+// }
+
+// .bouton-Like input:checked ~ .full-heart-icon{
+//   background: -webkit-linear-gradient($color-primary,$color-secondary);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+// .bouton-Like input:not(:checked) ~ .full-heart-icon{
+//   font-weight: 400;
+//   background-color: transparent;
+// }
 
 
 // TRANSITION & COULEURS DU COEUR :
