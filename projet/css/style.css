@@ -512,7 +512,7 @@ h1, h4.slogan {
 /* APPARITION ET DISPARITON du LOADING SCREEN */
 /*#region*/
 .logo {
-  font-size: xxx-large;
+  font-size: 60px;
   font-family: "Shrikhand";
   background: #9356DC;
   background: -webkit-repeating-linear-gradient(to right, #9356DC 0%, #FF79DA 50%, #9356DC 100%);
