@@ -56,38 +56,31 @@ button:hover {
 /*#endregion*/
 /* BOUTONS "J'aime" */
 /*#region*/
-input.checkbox-Like {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-}
-
 .bouton-Like {
+  font-size: larger;
   border: none;
   cursor: pointer;
+  background: transparent;
+}
+.bouton-Like i {
+  /* permet aux pictogrammes "<3" de se chevaucher */
   position: absolute;
-  /* pour pouvoir le positionner dans le preview */
+}
+.bouton-Like:hover .full-heart-icon, .bouton-Like:active .full-heart-icon {
+  opacity: 1;
 }
 
 .full-heart-icon {
-  transition: all 1.5s ease-in-out;
-}
-
-.bouton-Like input:checked ~ .full-heart-icon {
-  font-weight: 900;
+  transition: all 600ms ease-in-out;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1.1);
+  opacity: 0;
 }
 
-.bouton-Like input:not(:checked) ~ .full-heart-icon {
-  font-weight: 400;
-}
-
+/*#endregion*/
+/* Essai transition avec input*/
+/*#region*/
 /*#endregion*/
 .localisation {
   display: flex;
@@ -463,10 +456,9 @@ span {
   border-radius: 15px 15px 0px 0px;
 }
 .resto-prev__like {
-  width: 32px;
-  height: 32px;
-  right: 40px;
-  bottom: 25px;
+  position: absolute;
+  right: 50px;
+  bottom: 55px;
 }
 
 /* PASTILLE "Nouveau" */
