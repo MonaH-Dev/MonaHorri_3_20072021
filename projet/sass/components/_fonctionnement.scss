@@ -38,13 +38,16 @@
     position: absolute;
     font-size: small;
   }
-  
-  &__picto :hover{
-    color: $color-primary;
-  }
 }
 
 .fnt-bloc :hover, .fnt-bloc :active{
-  color: $color-primary;
   background-color: lighten($color: $color-primary, $amount: 30%);
+}
+//Autre manière d'écrire :
+.fnt-bloc {
+  &:hover, &:active {
+    .fnt-bloc__picto {
+      color: $color-primary;
+    }
+  }
 }

@@ -66,6 +66,7 @@ button:hover {
 .bouton-Like i {
   /* permet aux pictogrammes "<3" de se chevaucher */
   position: absolute;
+  font-size: 25px;
 }
 .bouton-Like:hover .full-heart-icon, .bouton-Like:active .full-heart-icon {
   opacity: 1;
@@ -114,11 +115,23 @@ h1 {
   margin-top: -45px;
   z-index: 1;
 }
+@media (min-width: 769px) {
+  .menu {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .menu__en-tete {
   display: flex;
   justify-content: space-between;
   width: 95%;
   position: relative;
+}
+@media (min-width: 769px) {
+  .menu__en-tete {
+    justify-content: center;
+  }
 }
 .menu__title {
   font-family: "Shrikhand";
@@ -145,11 +158,12 @@ h1 {
 }
 .menu__commander {
   text-align: center;
+  width: 100%;
 }
 .menu__like {
   position: absolute;
   right: 15px;
-  bottom: 45px;
+  bottom: 38px;
 }
 
 span {
@@ -410,13 +424,13 @@ span {
   position: absolute;
   font-size: small;
 }
-.fnt-bloc__picto :hover {
-  color: #9356DC;
-}
 
 .fnt-bloc :hover, .fnt-bloc :active {
-  color: #9356DC;
   background-color: #e4d5f6;
+}
+
+.fnt-bloc:hover .fnt-bloc__picto, .fnt-bloc:active .fnt-bloc__picto {
+  color: #9356DC;
 }
 
 .gridresto {
@@ -458,8 +472,8 @@ span {
 }
 .resto-prev__like {
   position: absolute;
-  right: 70px;
-  bottom: 55px;
+  right: 50px;
+  bottom: 50px;
 }
 
 /* PASTILLE "Nouveau" */

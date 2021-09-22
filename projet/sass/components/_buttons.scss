@@ -38,6 +38,7 @@ transition: transform 300ms ease-in-out, box-shadow 350ms linear;
   background: transparent;
   i { /* permet aux pictogrammes "<3" de se chevaucher */
     position: absolute; 
+    font-size: 25px;
   }
   &:hover,
   &:active {
@@ -59,6 +60,10 @@ transition: transform 300ms ease-in-out, box-shadow 350ms linear;
   opacity: 0;
 }
 /*#endregion*/
+
+
+
+
 
 /* Essai transition avec input*/ /*#region*/
 // La transition de la couleur ne marche pas
