@@ -7,13 +7,12 @@
   margin-top: -45px;
   z-index: 1;
   @media (min-width: 769px) {
-    justify-content: space-around;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
   &__en-tete {
     display: flex;
-    justify-content: space-between;
     width: 95%;
     position: relative;
     @media (min-width: 769px) {
@@ -30,6 +29,10 @@
     border-bottom: 4px solid $color-tertiary;
     width: 40px;
     padding-bottom: 5px;
+  }
+  article {
+    max-width: 800px;
+    width: 100%;
   }
   &__prez {
     background-color: white;
@@ -51,6 +54,9 @@
     position: absolute;
     right: 15px;
     bottom: 38px;
+    @media (min-width : 769px) {
+      right: 200px;
+    }
   }
 }
 span /* le prix (.menu__prix) */{
